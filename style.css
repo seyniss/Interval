@@ -1,0 +1,27 @@
+*{margin:0;padding:0;box-sizing: border-box;}
+
+#container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: brown;
+}
+
+#container .title{
+    font-size: 100px;
+    color:#fff;
+    text-shadow: 0 0 10px rgb(0, 0, 0,0.322);
+}
+button{
+    padding: 20px 40px;
+    border:none;
+    font-size: 18px;
+    border-radius: 5px;
+    color:#fff;
+    background-color: #8e8e8e;
+}
+button#play{
+    background-color: #000;
+}
