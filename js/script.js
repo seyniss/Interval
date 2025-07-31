@@ -28,7 +28,7 @@ playBtn.addEventListener('click',()=>{
     }
 })
 stopBtn.addEventListener('click',()=>{
-    if(!play){
+    if(play){
         setInterval(bgChange,1000)
     }
     clearInterval(play)
