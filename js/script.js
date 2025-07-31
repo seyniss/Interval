@@ -17,9 +17,8 @@ function bgChange(){
     title.textContent=randomColor
     
 }
-let play = setInterval(bgChange,1000)
 
-
+let play 
 
 
 playBtn.addEventListener('click',()=>{
@@ -29,8 +28,8 @@ playBtn.addEventListener('click',()=>{
 })
 stopBtn.addEventListener('click',()=>{
     if(play){
-        setInterval(bgChange,1000)
+        clearInterval(play)
+        play=null 
     }
-    clearInterval(play)
-    play=null 
+    
 })
